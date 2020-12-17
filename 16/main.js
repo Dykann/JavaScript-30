@@ -3,9 +3,12 @@ const text = hero.querySelector("h1");
 const walk = 500; // 500px
 
 function shadow(e) {
+  // 2 ways to declare an element-property into a variable
+  // 1.1) Normal way
   //   const width = hero.offsetWidth;
   //   const height = hero.offsetHeight;
 
+  // 1.2) Destructuring
   const { offsetWidth: width, offsetHeight: height } = hero;
   let { offsetX: x, offsetY: y } = e;
 
