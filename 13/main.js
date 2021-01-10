@@ -16,7 +16,7 @@ const texts = [
 ];
 
 paragraphs.forEach(function (paragraph, index) {
-  paragraph.innerHTML = texts[index];
+  paragraph.textContent = texts[index];
 });
 
 const images = document.querySelectorAll(".slide-in");
