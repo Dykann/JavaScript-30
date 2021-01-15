@@ -34,8 +34,8 @@ function displayTimeLeft(seconds) {
   timerDisplay.textContent = display;
 }
 
-function displayEndTime(timestamp) {
-  const end = new Date(timestamp);
+function displayEndTime(then) {
+  const end = new Date(then);
   const hour = end.getHours();
   const adjustedHour = hour > 12 ? hour - 12 : hour;
   const minutes = end.getMinutes();
